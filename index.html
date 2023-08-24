@@ -85,18 +85,20 @@
                     <!-- <img src="./assets/banner.jpg" class="img-fluid rounded shadow-lg" alt="banner"/> -->
                 </div>
                 <!-- <img src="./assets/logo.png" class=" img-fluid" width="300" alt="logo"/> -->
-                <h1>Join Us as an Ambassador for Change with The Willie Lynch Collection</h1>
-
-                <p class="shdaow-lg rounded">
-                    Welcome to an opportunity that goes beyond business; an opportunity to become an ambassador for
-                    change in
-                    your community. The Willie Lynch Collection presents a unique business opportunity that offers both
-                    financial rewards and spiritual fulfillment. By joining us, you'll not only be promoting
-                    high-quality
-                    apparel but also contributing to building better communities and empowering individuals through
-                    fashion and
-                    financial education.
-                </p>
+                <h1 class="mb-3">Join Us as an Ambassador for Change with The Willie Lynch Collection</h1>
+                <div class="shadow-lg  rounded">
+                    <p class="p-5">
+                        Welcome to an opportunity that goes beyond business; an opportunity to become an ambassador for
+                        change in
+                        your community. The Willie Lynch Collection presents a unique business opportunity that offers both
+                        financial rewards and spiritual fulfillment. By joining us, you'll not only be promoting
+                        high-quality
+                        apparel but also contributing to building better communities and empowering individuals through
+                        fashion and
+                        financial education.
+                    </p>
+                </div>
+               
             </div>
         </div>
 
@@ -116,8 +118,8 @@
                     <!-- <img src="./assets/military set.png" class="img-fluid" width="300"/> -->
                     <!-- <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script> -->
                     <div class="figure">
-                        <img class="Sirv image-main bg-white" src="./assets/hoodieBlack.jpg" width="300">
-                        <img class="Sirv image-hover bg-white" src="./assets/bottomBlack.jpg">
+                        <img class="Sirv  img-fluid image-main bg-white" src="./assets/hoodieBlack.jpg">
+                        <img class="Sirv img-fluid image-hover bg-white" src="./assets/bottomBlack.jpg">
                     </div>
                 </div>
             </div>
@@ -132,8 +134,8 @@
                 </div>
                 <div class="col-sm  m-3">
                     <div class="figure">
-                        <img class="Sirv image-main bg-white" src="./assets/harrietBackPink.jpg">
-                        <img class="Sirv image-hover bg-white" src="./assets/harrietFrontBlack.jpg">
+                        <img class="Sirv img-fluid image-main bg-white" src="./assets/harrietBackPink.jpg">
+                        <img class="Sirv img-fluid image-hover bg-white" src="./assets/harrietFrontBlack.jpg">
                     </div>
                 </div>
             </div>
@@ -327,32 +329,22 @@
                 united future. Together, we're more than fashion – we're a force for positive transformation.</p>
         </div>
     </div>
-    <!-- <div class="modal bg-transparent  container"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content"> -->
-    <!-- <div class="modal-header">
-              <h5 class="modal-title"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
-    <!-- <div class="videoPop  text-center ">
-        <video src="./assets/videoPop.mp4" class="img-fluid rounded" autoplay></video>
-    </div> -->
-
-    <!-- </div>
-        </div>
-      </div> -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button> -->
+    
 
     <script type="text/javascript">
         const myPopup = new Popup({
     id: "my-popup",
     title: "",
     content: `
-    <video src="./assets/videoPop.mp4" class="img-fluid rounded" autoplay></video>
+    <video src="./assets/videoPop.mp4" id="vid" controls="true" class="img-fluid rounded" controls autoplay></video>
       `,
-        showImmediately: true
+      hideCallback: ()=>{
+            let v = document.getElementById("vid");
+            v.pause();
+
+        },
+        showImmediately: true,
+       
 });
 
     </script>
